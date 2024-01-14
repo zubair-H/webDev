@@ -1,0 +1,180 @@
+body {
+    place-items: center;
+    font-family: var(--font-family);
+    background: rgb(27, 26, 26);
+
+    overflow: hidden;
+}
+
+
+.container1 {
+    position: fixed;
+    top: 40%;
+    /* Adjust the top position as needed */
+    left: 7%;
+    transform: translateX(-50%);
+
+
+}
+
+
+
+
+.pomo {
+    color: #F5E8C7;
+    margin-bottom: 20px;
+    /* Adjust the margin-bottom as needed */
+}
+
+.timer-display {
+    font-size: 30px;
+    width: 210px;
+    height: 62px;
+    background: #1e304f;
+    position: relative;
+    left: 1%;
+    font-family: 'Roboto mono', monospace;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+/* Rest of your CSS styles */
+.buttons1 {
+    width: 210px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttons1 button {
+    flex: 1;
+    max-width: 100px;
+    height: 30px;
+    background-color: #81b495;
+    color: #000000;
+    border: none;
+    font-family: 'Roboto mono', monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.buttons1 button:nth-last-child(2) {
+    background-color: #e08456;
+}
+
+.buttons1 button:nth-last-child(1) {
+    background-color: #F5E8C7;
+}
+
+.buttons1 button:hover {
+    background-color: #1e304f;
+    color: #F5E8C7;
+
+}
+
+
+#new-task-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image {
+    width: 30px;
+    margin-left: 97.5%;
+    margin-top: 5px;
+
+}
+
+#title,
+#title2 #new-task-form {
+    height: 100px;
+    font-family: 'Roboto mono', monospace;
+
+    text-align: center;
+    /* Center the text horizontally */
+    display: flex;
+    justify-content: center;
+    /* Center the element itself vertically */
+    align-items: center;
+    /* Center the element itself horizontally */
+    height: 100px;
+    /* Optional: Set height to center vertically within the viewport */
+    margin: 0;
+    /* Optional: Remove default margin */
+}
+
+.new-task-form {
+    color: #F5E8C7;
+}
+
+#tasks {
+
+    text-align: center;
+    /* Center the text horizontally */
+    display: flex;
+    justify-content: center;
+    /* Center the element itself vertically */
+    align-items: center;
+    /* Center the element itself horizontally */
+    height: 100px;
+}
+
+#title {
+    color: #F5E8C7;
+
+}
+
+.new-task-form button:hover {
+    background-color: #1e304f;
+    color: #F5E8C7;
+
+}
+
+
+
+#section2 {
+    display: flex;
+    position: fixed;
+    top: 48%;
+
+    /* Adjust the top position as needed */
+
+    transform: translateX(-50%);
+
+    width: 100%;
+}
+
+#title2 {
+    margin-left: 90%;
+    color: #F5E8C7;
+
+}
+
+#tasks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* Display tasks in a column */
+
+
+    /* Adjust height as needed */
+    margin-top: 100px;
+}
+
+.task-list {
+    margin-top: 20px;
+    /* Add space between task lists */
+    margin-left: auto;
+    margin-right: auto;
+}

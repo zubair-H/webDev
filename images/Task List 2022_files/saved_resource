@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2022</title>
+
+	<link rel="stylesheet" href="styles3.css" />
+</head>
+<body>
+    <img id="image" src="images/note-xxl.png" alt="">
+	<header>
+		<h1 id="title">Let's Maximize Productivity!</h1>
+		<div id="section1">
+            <form id="new-task-form">
+                <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="Add a new task" />
+                <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add task" />
+            </form>
+        </header>
+        <main>
+            <section class="task-list">
+                <h2 id="title">Tasks</h2>
+    
+                <div id="tasks">
+                    <!-- Dynamically generated tasks will be added here -->
+                </div>
+            </section>
+        </main>
+        </div>
+
+
+
+
+    <div id="section2">
+        <header>
+		
+            <form id="book-marks">
+                <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="Add a book mark here" />
+                <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add " />
+            </form>
+        </header>
+        <main>
+            <section class="task-list">
+                <h2 id="title2">Bookmarks</h2>
+    
+                <div id="tasks">
+                    <!-- Dynamically generated tasks will be added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+	<div class="container1">
+		<h2 class="pomo">
+			Try Pomodoro!
+		</h2>
+		<div class="timer-display">
+			25 : 00
+		</div>
+		<div class="buttons1">
+			<button id="start-timer">Start</button>
+			<button id="pause-timer">Pause</button>
+			<button id="reset-timer">Reset</button>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
