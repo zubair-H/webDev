@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #1f1f1f;
     color: #fff;
+    box-sizing: border-box;
+    /* Include padding and borders in the element's total width and height */
 }
 
 header {
@@ -12,16 +14,12 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-    /* Adjusted padding for both horizontal sides */
     text-align: center;
     border-radius: 15px;
     margin-top: 10px;
     padding-bottom: 1px;
     max-width: 570px;
-
-    /* Added max-width to shrink the header */
     margin-left: auto;
-    /* Center the header by setting left and right margins to auto */
     margin-right: auto;
 }
 
@@ -35,11 +33,25 @@ header {
     background-color: #292929;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    /* White shadow */
-
-    /* White shadow */
-
 }
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 767px) {
+
+    #section1,
+    #section2,
+    #section3 {
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+    }
+
+    header {
+        margin-right: 0;
+        /* Adjusted margin for smaller screens */
+    }
+}
+
+
 
 .task-list,
 .task-list2 {
