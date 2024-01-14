@@ -68,10 +68,16 @@ h3 {
 
 /* Image styles */
 .myImage {
+    cursor: pointer;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+
+.myImage:hover {
+    background-color: #555;
+    /* Change the background color on hover */
 }
 
 /* Audio player styles */
